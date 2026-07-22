@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan 90/10 - URD San Justo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
+    <style>
+        :root {
+            --navy: #0d1b2a;
+            --navy-mid: #1a2e45;
+            --gold: #c8a84b;
+            --gold-light: #e8c96b;
+            --cream: #f5f0e8;
+            --text-dark: #0d1b2a;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--cream);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 1rem;
+            position: relative;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .escudo-img {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
+        .header h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            color: var(--gold-light);
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-dark);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--navy);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-top-color: var(--gold);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--navy);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--navy);
+            color: var(--white);
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="https://drive.google.com/uc?export=view&id=1voHzuQV5NN1I6evDRwjw3J_bpQwDPGm5" alt="Escudo Dirección General Departamentales Norte" class="escudo-img">
+        <h1>SISTEMA DE CARGA DE CONTROLES PLAN 90/10</h1>
+        <h2>URD SAN JUSTO - DIRECCIÓN GENERAL DEPARTAMENTALES NORTE</h2>
+    </header>
+
+    <main class="container">
+        <div class="grid-2">
+            <a href="https://script.google.com/macros/s/AKfycbwaGWCWy2KaPn7I6YdFmqA5lIJLHCNnTirwLjLSPh3yJzjOitvZzwrR7mABndCeWZDALg/exec" target="_blank" rel="noopener noreferrer" class="card">
+                <div class="card-icon">📋</div>
+                <h3>Ingresar al Formulario</h3>
+                <p>Acceso directo a la carga operativa del Plan 90/10</p>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Dirección General Departamentales Norte. Plataforma de Oficiales Superiores.</p>
+    </footer>
+
+</body>
+</html>
